@@ -1,0 +1,206 @@
+:root {
+  --link-color: #053352;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: Arial;
+  padding: 40px 0;
+}
+
+.container {
+  box-shadow: 0 0 20px grey;
+  width: 960px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.header-top {
+  display: flex;
+}
+
+.image-container {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  margin: 10px;
+  margin-left: 50px;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+}
+
+.name-container {
+  margin-left: 50px;
+}
+
+.git-in-container {
+  display: flex;
+  justify-content: center;
+}
+
+.git-in-address {
+  font-size: 15px;
+  margin: 0 8px;
+}
+
+.cv-icon {
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 170px;
+}
+
+.cv-span {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+address {
+    font-size: 13px;
+    text-align: center;
+    margin-left: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.address-icon {
+    width: 14px;
+    height: 14px;
+    background-color: cornflowerblue;
+    margin-right: 6px;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.contact-link {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--link-color);
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.contact-link:hover {
+    color: var(--link-color);
+    border-bottom: 1px solid var(--link-color);
+}
+
+section {
+    padding: 5px 40px 5px 40px;
+}
+
+.end p {
+    font-size: 10px;
+    padding: 5px 40px 5 px 40px;
+    text-align: center;
+}
+
+.exp-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.exp-company h4, h5 {
+  margin: 0;
+}
+
+.skill-level {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill-level p {
+  margin: 0;
+  padding: 0;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nov-container, .beg-container {
+  width: 38vw;
+  padding-left: 30px;
+}
+
+.skill-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  list-style-type: none;
+}
+
+.skill-grid li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-list-all {
+  display: flex;
+}
+
+.lang-list-item {
+  display: flex;
+  align-items: center;
+}
+
+.lang-icon {
+  width: 30px;
+  height: 20px;
+  border: black 1px solid;
+  margin-right: 8px;
+}
+
+a.git-link {
+  color: var(--link-color);
+  text-decoration: none;
+  position: relative;
+}
+
+a.git-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #146296;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+}
+
+a.git-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
