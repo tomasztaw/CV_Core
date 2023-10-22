@@ -20,11 +20,12 @@ body {
 }
 
 .image-container {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   overflow: hidden;
   margin: 10px;
-  margin-left: 50px;
+  margin-left: 40px;
+  margin-top: 25px;
 }
 
 .profile-picture {
@@ -52,7 +53,7 @@ body {
 .cv-icon {
   width: 80px;
   height: 80px;
-  background-color: blue;
+  background-color: cornflowerblue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,6 +71,20 @@ address {
     text-align: center;
     margin-left: 8px;
 }
+/* 
+address ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+} */
+
+/* address li {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 5px;
+}
+ */
 
 ul {
   list-style: none;
@@ -110,9 +125,17 @@ section {
     padding: 5px 40px 5px 40px;
 }
 
+section p {
+  line-height: 1.25rem;
+}
+
+.exp-years h5 {
+  font-weight: 400;
+}
+
 .end p {
-    font-size: 10px;
-    padding: 5px 40px 5 px 40px;
+    font-size: 12px;
+    padding: 5px 40px 40 px 40px;
     text-align: center;
 }
 
@@ -165,6 +188,7 @@ section {
 
 .lang-list-all {
   display: flex;
+  justify-content: space-around;
 }
 
 .lang-list-item {
