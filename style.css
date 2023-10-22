@@ -5,30 +5,49 @@
 body {
   background-color: aliceblue;
   font-family: Arial;
-  padding: 40px 0;
+  padding: 32px 0;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+li {
+  padding: 4px 0;
+}
+
+h1, h2 {
+  margin: 8px 0;
+}
+p {
+  margin: 0 0 16px 0;
 }
 
 .container {
-  box-shadow: 0 0 20px grey;
-  width: 960px;
+  box-shadow: 0 0 16px grey;
+  width: 898px;
   margin: 0 auto;
   background-color: white;
+  padding: 32px;
+  position: relative;
 }
 
 .header-top {
   display: flex;
 }
 
-.image-container {
-  width: 120px;
-  height: 120px;
+.profile-image-container {
+  width: 150px;
+  height: 150px;
   overflow: hidden;
-  margin: 10px;
-  margin-left: 40px;
-  margin-top: 25px;
 }
 
-.profile-picture {
+.profile-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -37,40 +56,83 @@ body {
 }
 
 .name-container {
-  margin-left: 50px;
+  margin-left: 32px;
+  width: calc(100% - 182px);
 }
 
-.git-in-container {
+
+address {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  font-style: normal;
+  a {
+    
+  }
+}
+.git-link-container {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 45%;
 }
 
-.git-in-address {
-  font-size: 15px;
-  margin: 0 8px;
+a.git-link {
+  align-items: center;
+  color: var(--link-color);
+  text-decoration: none;
+  position: relative;
+  text-align: center;
+  width: 120px;
+  border-radius: 8px;
+  border: 1px solid black;
+  display: block;
+  padding: 8px;
+  font-weight: bold;
 }
+
+a.git-link img {
+  margin-bottom: 4px;
+  width: 120px;
+}
+
+a.git-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -8px;
+  left: 0;
+  background-color: #146296;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s;
+}
+
+a.git-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 
 .cv-icon {
+  position: absolute;
   width: 80px;
   height: 80px;
   background-color: cornflowerblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 170px;
+  right: 60px;
+  top: 0px;
 }
 
 .cv-span {
-  font-size: 40px;
+  font-size: 42px;
   color: white;
   font-weight: bold;
 }
 
-address {
-    font-size: 13px;
-    text-align: center;
-    margin-left: 8px;
-}
+
 /* 
 address ul {
   display: flex;
@@ -86,15 +148,7 @@ address ul {
 }
  */
 
-ul {
-  list-style: none;
-  padding: 0;
-}
 
-li {
-  display: inline;
-  margin-right: 20px;
-}
 
 .address-icon {
     width: 14px;
@@ -122,7 +176,7 @@ li {
 }
 
 section {
-    padding: 5px 40px 5px 40px;
+    margin: 16px 0 32px;
 }
 
 section p {
@@ -134,18 +188,23 @@ section p {
 }
 
 .end p {
-    font-size: 12px;
-    padding: 5px 40px 40 px 40px;
+    font-size: 14px;
     text-align: center;
 }
 
-.exp-top {
+.exp-container {
   display: flex;
   justify-content: space-between;
+
+}
+.exp-years {
+  text-align: right;
 }
 
-.exp-company h4, h5 {
+h4, h5 {
   margin: 0;
+  font-weight: normal;
+  display: inline;
 }
 
 .skill-level {
@@ -164,8 +223,7 @@ section p {
 }
 
 .nov-container, .beg-container {
-  width: 38vw;
-  padding-left: 30px;
+  width: 50%;
 }
 
 .skill-icon {
@@ -188,7 +246,7 @@ section p {
 
 .lang-list-all {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .lang-list-item {
@@ -203,28 +261,6 @@ section p {
   margin-right: 8px;
 }
 
-a.git-link {
-  color: var(--link-color);
-  text-decoration: none;
-  position: relative;
-}
 
-a.git-link::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #146296;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s;
-}
-
-a.git-link:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
 
 
