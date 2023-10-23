@@ -24,13 +24,15 @@ li {
 h1, h2 {
   margin: 8px 0;
 }
+
 p {
   margin: 0 0 16px 0;
 }
 
 .container {
   box-shadow: 0 0 16px grey;
-  width: 898px;
+  /* width: 898px; */
+  width: 928px;
   margin: 0 auto;
   background-color: white;
   padding: 32px;
@@ -60,15 +62,12 @@ p {
   width: calc(100% - 182px);
 }
 
-
 address {
   display: flex;
   justify-content: space-between;
   font-style: normal;
-  a {
-    
-  }
 }
+
 .git-link-container {
   display: inline-flex;
   justify-content: space-around;
@@ -113,7 +112,6 @@ a.git-link:hover::before {
   transform-origin: bottom left;
 }
 
-
 .cv-icon {
   position: absolute;
   width: 80px;
@@ -131,24 +129,6 @@ a.git-link:hover::before {
   color: white;
   font-weight: bold;
 }
-
-
-/* 
-address ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-} */
-
-/* address li {
-  width: 50%;
-  box-sizing: border-box;
-  padding: 5px;
-}
- */
-
-
 
 .address-icon {
     width: 14px;
@@ -231,22 +211,23 @@ h4, h5 {
   height: 20px;
 }
 
-.skill-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+.skill-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
   list-style-type: none;
 }
 
-.skill-grid li {
+.skill-box li {
   display: flex;
   align-items: center;
-  gap: 10px;
+   margin: 10px 0;
+  width: calc(50% - 20px);
 }
 
 .lang-list-all {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .lang-list-item {
@@ -261,6 +242,18 @@ h4, h5 {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Dodaj style dostosowane do tabletów */
+  
+ 
+}
+
+
+@media screen and (max-width: 767px) {
+  /* Dodaj style dostosowane do telefonów komórkowych */
+  
+ 
+}
 
 
 
